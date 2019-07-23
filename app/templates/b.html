@@ -12,9 +12,35 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    
+  `<style>
+    .parent{
+      margin: 10px;
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      background-color: purple;
+      align-items : flex-start;
+    }
+    .child{
+      background-color: orange;
+      width: 125px;
+      height: 100px;
+      margin: 10px;
+    }
+ </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
 	</body>
 </html>
